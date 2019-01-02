@@ -18,7 +18,7 @@ public class DemoDataSource {
         return new DataSourceConfig();
     }
 
-    @Bean(name = "veloHikariDataSource")
+    @Bean(name = "demoHikariDataSource")
     @Primary
     public DataSource hikariDataSource(@Qualifier("dataSourceConfig") DataSourceConfig dataSourceConfig)
             throws SQLException {
